@@ -1,0 +1,22 @@
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  cloud:
+    nacos:
+      config:
+        file-extension: yml
+        server-addr: localhost:8848
+        group: ${spring.application.name}
+#        namespace: f0956107-98a3-46ce-93ad-e27ed53cfcc0
+      discovery:
+        server-addr: localhost:8848
+#        namespace:
+  datasource:
+    hikari:
+      leak-detection-threshold: 2000
+      minimum-idle: 5
+  profiles:
+    include: zuul
+#    active: test
+#server:
+#  port: 3355
