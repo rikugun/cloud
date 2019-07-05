@@ -19,5 +19,6 @@
     <modules>
         <module>admin-sentinel</module>
         <module>cloud-parent</module>
+        <module>auth</module>
     </modules>
 </project>

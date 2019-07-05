@@ -15,6 +15,7 @@ spring:
 ---
 spring:
   profiles: jwt
+
 security:
   oauth2:
     resource:

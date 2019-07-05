@@ -1,0 +1,23 @@
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: auth-service
+  cloud:
+    nacos:
+      config:
+        file-extension: yml
+        server-addr: ${app.nacos.server-addr}
+      discovery:
+        server-addr: ${app.nacos.server-addr}
+  datasource:
+    hikari:
+      leak-detection-threshold: 2000
+      minimum-idle: 5
+  profiles:
+    active: local
+server:
+  port: 3355
+app:
+  nacos:
+    server-addr: nacos-test1:8848,nacos-test2:8848
