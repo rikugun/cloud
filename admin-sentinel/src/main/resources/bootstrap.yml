@@ -1,0 +1,17 @@
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: admin-sentinel
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${app.nacos.server-addr}
+      config:
+        server-addr: ${app.nacos.server-addr}
+        file-extension: yml
+server:
+  port: 6660
+app:
+  nacos:
+    server-addr: 133.0.225.20:8848,133.0.225.21:8848

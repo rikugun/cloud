@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>cloud-parent</artifactId>
+        <groupId>cn.com.starmetal</groupId>
+        <version>1.0.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>admin-sentinel</artifactId>
+    <version>1.0.0</version>
+    <properties>
+        <sentinel.version>1.6.2</sentinel.version>
+    </properties>
+
+    <dependencies>
+        <!--
+       <dependency>
+           <groupId>com.alibaba.csp</groupId>
+           <artifactId>sentinel-dashboard</artifactId>
+           <version>${sentinel.version}</version>
+           <scope>system</scope>
+           <systemPath>${project.basedir}/vendor/sentinel-dashboard/sentinel-dashboard-${sentinel.version}.jar</systemPath>
+       </dependency>
+
+        -->
+        <dependency>
+            <groupId>de.codecentric</groupId>
+            <artifactId>spring-boot-admin-starter-server</artifactId>
+            <version>${spring-boot-admin.version}</version>
+        </dependency>
+
+
+    </dependencies>
+
+
+</project>

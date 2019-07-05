@@ -1,0 +1,29 @@
+security:
+  oauth2:
+    resource:
+      jwt:
+        key-value: mysecret
+spring:
+  profiles:
+    active:
+      - insecure
+
+---
+spring:
+  profiles: insecure
+
+---
+spring:
+  profiles: jwt
+security:
+  oauth2:
+    resource:
+      jwt:
+        key-value: mysecret
+---
+spring:
+  profiles: secure
+  security:
+    user:
+      name: "user"
+      password: "password"
